@@ -23,7 +23,8 @@ end
 
 
 def apply_coupons(cart, coupons)
-  output = {}
+  output = cart
+  coupons = {}
 # binding.pry
 coupons.each do |coup_array|
   coup_array.each do |coupons_key,coupons_value|
@@ -31,7 +32,7 @@ coupons.each do |coup_array|
       item_hash.each do |cart_key,cart_value|
         binding.pry
         if coup_array[:item] == item
-          output["AVOCADO W/COUPON"] = {}
+          coupons["AVOCADO W/COUPON"] = {}
           # output[item][:count] -= coupons[:num]
         end
 end
@@ -40,6 +41,7 @@ end
 
   end
   output
+  coupons
 end
 
 def apply_clearance(cart)
