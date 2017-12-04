@@ -23,7 +23,7 @@ end
 
 
 def apply_coupons(cart, coupons)
-  output = cart
+  output = {}
 binding.pry
 coupons.each do |coup_array|
   coup_array.each do |coupons_key,coupons_value|
