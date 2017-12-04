@@ -18,7 +18,7 @@ def consolidate_cart(cart)
       end
     end
   end
-    consolidate_cart
+    updated_hash
 end
 
 
