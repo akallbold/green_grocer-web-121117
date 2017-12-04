@@ -24,11 +24,12 @@ end
 
 def apply_coupons(cart, coupons)
   output = cart
-binding.pry
+
 coupons.each do |coup_array|
   coup_array.each do |coupons_key,coupons_value|
     cart.each do |item,item_hash|
       item_hash.each do |cart_key,cart_value|
+        binding.pry
         if coup_array[:item] == item
           output["AVOCADO W/COUPON"] = {:price => [:cost], :clearance => true, :count => 1}
           output[item][:count] -= coupons[:num]
