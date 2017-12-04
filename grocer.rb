@@ -32,9 +32,10 @@ def apply_coupons(cart, coupons)
           output["AVOCADO W/COUPON"] = {:price => [:cost], :clearance => true, :count => 1}
           output[item][:count] -= coupons[:num]
         end
-        binding.pry
+
       end
     end
+            binding.pry
   end
   output
 end
