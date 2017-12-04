@@ -32,7 +32,7 @@ coupons.each do |coup_array|
         binding.pry
         if coup_array[:item] == item
           output["AVOCADO W/COUPON"] = {}
-          output[item][:count] -= coupons[:num]
+          # output[item][:count] -= coupons[:num]
         end
 end
       end
