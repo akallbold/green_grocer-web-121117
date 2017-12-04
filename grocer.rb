@@ -10,9 +10,9 @@ def consolidate_cart(cart)
       if updated_hash[item]
         updated_hash[item] = item_detail
         current_item= updated_hash[item]
-        current_item[:count]=1
-      else
-        current_item[:count]+=1
+        current_item[:count] = 1
+      # else
+        # current_item[:count] += 1
       end
     end
   end
