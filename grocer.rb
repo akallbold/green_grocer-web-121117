@@ -15,7 +15,6 @@ def consolidate_cart(cart)
         current_item= updated_hash[item]
         current_item[:count] += 1
       end
-      # binding.pry
     end
   end
     updated_hash
@@ -24,7 +23,19 @@ end
 
 
 def apply_coupons(cart, coupons)
-  # code here
+  output={}
+
+    coupons.each do |coupons_key,coupons_value|
+      cart.each do |item,item_hash|
+        item_hash.each do |cart_key,cart_value|
+          if coupons[:item] == item
+
+          end
+        end
+      end
+    end
+  end
+  output
 end
 
 def apply_clearance(cart)
