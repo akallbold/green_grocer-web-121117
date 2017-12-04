@@ -24,7 +24,7 @@ end
 
 def apply_coupons(cart, coupons)
   output = cart
-
+binding.pry
   coupons.each do |coupons_key,coupons_value|
     cart.each do |item,item_hash|
       item_hash.each do |cart_key,cart_value|
@@ -35,7 +35,7 @@ def apply_coupons(cart, coupons)
 
       end
     end
-            binding.pry
+
   end
   output
 end
