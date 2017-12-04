@@ -32,7 +32,7 @@ coupons.each do |coup_array|
       item_hash.each do |cart_key,cart_value|
         binding.pry
         if coup_array[:item] == item
-          coupons["AVOCADO W/COUPON"] = {}
+          coupons["AVOCADO W/COUPON"] = {:price => [:cost], :clearance => true, :count => 1}
           # output[item][:count] -= coupons[:num]
         end
 end
