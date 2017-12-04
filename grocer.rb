@@ -23,13 +23,14 @@ end
 
 
 def apply_coupons(cart, coupons)
-  output={}
+  output = cart
 
     coupons.each do |coupons_key,coupons_value|
       cart.each do |item,item_hash|
         item_hash.each do |cart_key,cart_value|
           if coupons[:item] == item
-
+            output["AVOCADO W/COUPON"]={:price => [:cost], :clearance => true, :count => 1}
+            output[item][:count]-=coupons[:num]
           end
         end
       end
