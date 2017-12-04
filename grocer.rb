@@ -1,10 +1,11 @@
 require 'pry'
 
 def consolidate_cart(cart)
-  updated_hash
+  updated_hash= {}
 
   cart.each do |item_array|
     item_array.each do |item,item_detail|
+
 
       if !updated_hash[item]
         updated_hash[item] = item_detail
@@ -14,10 +15,12 @@ def consolidate_cart(cart)
         current_item= updated_hash[item]
         current_item[:count] += 1
       end
+      # binding.pry
     end
   end
-  puts updated_hash
+    updated_hash
 end
+
 
 
 def apply_coupons(cart, coupons)
