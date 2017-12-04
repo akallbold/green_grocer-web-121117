@@ -12,6 +12,7 @@ def consolidate_cart(cart)
         current_item= updated_hash[item]
         current_item[:count] = 1
       else
+        current_item= updated_hash[item]
         current_item[:count] += 1
       end
       binding.pry
