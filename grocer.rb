@@ -7,7 +7,7 @@ def consolidate_cart(cart)
     item_array.each do |item,item_detail|
 
 binding.pry
-      if updated_hash[item]
+      if !updated_hash[item]
         updated_hash[item] = item_detail
         current_item= updated_hash[item]
         current_item[:count] = 1
