@@ -15,7 +15,7 @@ def consolidate_cart(cart)
         current_item= updated_hash[item]
         current_item[:count] += 1
       end
-      binding.pry
+      # binding.pry
     end
   end
     updated_hash
