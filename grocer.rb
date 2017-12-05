@@ -40,8 +40,7 @@ end
     end
 
   end
-  output
-  coupons
+  output + coupons
 end
 
 def apply_clearance(cart)
